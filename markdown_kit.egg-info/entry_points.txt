@@ -1,0 +1,2 @@
+[console_scripts]
+markdown-kit = markdown_kit.mdhelper:main

@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "markdown-kit"
+version = "1.0.0"
+description = "Markdown 文档辅助工具 - CSV转表格、目录生成、表格格式对齐"
+readme = "README.md"
+authors = [
+    {name = "BoiledSaltedDuck", email = "tools@office-tools.pro"}
+]
+license = {text = "MIT"}
+keywords = ["markdown", "csv", "table", "toc", "文档工具"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Topic :: Text Processing :: Markdown",
+    "Topic :: Utilities",
+]
+requires-python = ">=3.7"
+dependencies = []
+
+[project.scripts]
+markdown-kit = "markdown_kit.mdhelper:main"
+
+[tool.setuptools.packages.find]
+include = ["markdown_kit*"]
